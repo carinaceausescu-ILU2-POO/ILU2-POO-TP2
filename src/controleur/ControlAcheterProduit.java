@@ -14,6 +14,15 @@ public class ControlAcheterProduit {
 		this.controlVerifierIdentite = controlVerifierIdentite;
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
 	}
+	
+	public boolean verifierIdentite(String nomAcheteur) {
+		return controlVerifierIdentite.verifierIdentite(nomAcheteur);
+	}
+	
+	public boolean existeVendeursProduit(String produit) {
+	    return village.rechercherVendeursProduit(produit) != null;
+	}
+	
+	
 
-	//TODO a completer
 }
