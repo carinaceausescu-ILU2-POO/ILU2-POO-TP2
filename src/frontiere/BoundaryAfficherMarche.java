@@ -15,9 +15,8 @@ public class BoundaryAfficherMarche {
 			System.out.println("Le marché est vide, revenez plus tard.");
 		else {
 			System.out.println(nomAcheteur + ", vous trouverez au marché:");
-			for(int i=0, j=0; j<infosMarche.length; j++) {
-				System.out.println("- " + infosMarche[i++] + " qui vend " + infosMarche[i++]
-						+ " " + infosMarche[i]);
+			for(int i=0; i<infosMarche.length; i+=3) {
+			    System.out.println("- " + infosMarche[i] + " qui vend " + infosMarche[i+2] + " " + infosMarche[i+1]);
 			}
 		}
 	}
